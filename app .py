@@ -16,6 +16,10 @@ st.set_page_config(
     initial_sidebar_state="expanded"
 )
 
+# Developer Profile
+DEV_GITHUB = "https://github.com/coderravi0101"
+DEV_NAME = "Ravi Kumar Singh"
+CREATED_BY = "Reem Fayyaz"
 
 # ----------------------
 # ADVANCED CUSTOM CSS FOR PREMIUM UI/UX
@@ -378,11 +382,12 @@ with st.sidebar:
     # Developer Section in Sidebar
     st.markdown("### 👨‍💻 Developer Profile")
     st.markdown(f"**{DEV_NAME}**")
+    st.markdown(f"*Created by {CREATED_BY}*")
     st.markdown(
         f"""
         <a href="{DEV_GITHUB}" target="_blank" class="github-pill">
             <svg height="16" width="16" viewBox="0 0 16 16" fill="currentColor">
-                <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.28.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"></path>
+                <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08-.02 1.93.02 1.9.32 2.68.88 2.81 2.04.05.52.1 1.02.03 1.48 2.18-.82 3.47-2.45 3.47-4.06 0-.62-.11-1.23-.29-1.82.19-.53.29-1.08.29-1.69.0-1.38-.56-2.74-1.56-3.74z"></path>
             </svg>
             Follow on GitHub
         </a>
@@ -598,7 +603,7 @@ elif page == "Results & Insights":
 
         # Top Recommended Track Banner
         st.markdown(f"""
-        <div style="background: linear-gradient(135deg, rgba(16, 185, 129, 0.15) 0%, rgba(59, 130, 246, 0.15) 100%); padding: 1.8rem; border-radius: 16px; border: 1px solid rgba(16, 185, 129, 0.4); margin-bottom: 2rem;">
+        <div style="background: linear-gradient(135deg, rgba(16, 185, 129, 0.15) 0%, rgba(59, 130, 246, 0.15) 100%); padding: 1.8rem; border-radius: 16px; border: 1px solid rgba(16, 185, 129, 0.4); margin-bottom: 1.5rem;">
             <div style="font-size: 0.9rem; font-weight: 700; color: #10B981; text-transform: uppercase; letter-spacing: 0.05em;">🎯 Primary Recommendation</div>
             <div style="font-size: 2.2rem; font-weight: 800; color: #F8FAFC; margin: 4px 0;">{rec_meta['icon']} {recommended_track}</div>
             <div style="font-size: 1.05rem; color: #CBD5E1; margin-bottom: 0.8rem;">{rec_meta['tagline']}</div>
@@ -784,10 +789,11 @@ elif page == "Results & Insights":
             st.markdown(f"""
             <div style="background: rgba(15, 23, 42, 0.9); padding: 1.25rem; border-radius: 14px; border: 1px solid rgba(255,255,255,0.1); text-align: center;">
                 <div style="font-weight: 700; font-size: 1.1rem; color: #F8FAFC;">{DEV_NAME}</div>
-                <p style="color: #94A3B8; font-size: 0.88rem; margin: 6px 0 12px 0;">Open Source Developer & AI Explorer</p>
+                <p style="color: #94A3B8; font-size: 0.88rem; margin: 6px 0 6px 0;">Open Source Developer & AI Explorer</p>
+                <p style="color: #94A3B8; font-size: 0.85rem; margin: 0 0 12px 0;"><i>Created by {CREATED_BY}</i></p>
                 <a href="{DEV_GITHUB}" target="_blank" class="github-pill" style="justify-content: center; width: 100%;">
                     <svg height="16" width="16" viewBox="0 0 16 16" fill="currentColor">
-                        <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.28.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"></path>
+                        <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08-.02 1.93.02 1.9.32 2.68.88 2.81 2.04.05.52.1 1.02.03 1.48 2.18-.82 3.47-2.45 3.47-4.06 0-.62-.11-1.23-.29-1.82.19-.53.29-1.08.29-1.69.0-1.38-.56-2.74-1.56-3.74z"></path>
                     </svg>
                     Ravi
                 </a>
@@ -795,4 +801,3 @@ elif page == "Results & Insights":
             """, unsafe_allow_html=True)
 
 # ----------------------
-
