@@ -16,9 +16,6 @@ st.set_page_config(
     initial_sidebar_state="expanded"
 )
 
-# Developer Profile
-DEV_GITHUB = "https://github.com/coderravi0101"
-DEV_NAME = "Reem Fayyaz"
 
 # ----------------------
 # ADVANCED CUSTOM CSS FOR PREMIUM UI/UX
