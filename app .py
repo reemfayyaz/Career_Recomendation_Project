@@ -17,9 +17,8 @@ st.set_page_config(
 )
 
 # Developer Profile
-DEV_GITHUB = "https://github.com/coderravi0101"
-DEV_NAME = "Ravi Kumar Singh"
-CREATED_BY = "Reem Fayyaz"
+DEV_GITHUB = "https://github.com/reemfayyaz"
+DEV_NAME = "Reem Fayyaz"
 
 # ----------------------
 # ADVANCED CUSTOM CSS FOR PREMIUM UI/UX
@@ -382,7 +381,6 @@ with st.sidebar:
     # Developer Section in Sidebar
     st.markdown("### 👨‍💻 Developer Profile")
     st.markdown(f"**{DEV_NAME}**")
-    st.markdown(f"*Created by {CREATED_BY}*")
     st.markdown(
         f"""
         <a href="{DEV_GITHUB}" target="_blank" class="github-pill">
@@ -414,7 +412,7 @@ if page == "Home":
                 An intelligent rule-based career guidance platform designed to match your skills, coding preferences, and technical curiosity with high-impact engineering specializations.
             </div>
             <a href="{DEV_GITHUB}" target="_blank" class="github-pill">
-                ⭐ Star on GitHub (Ravi)
+                ⭐ Star on GitHub
             </a>
         </div>
     """, unsafe_allow_html=True)
@@ -789,13 +787,12 @@ elif page == "Results & Insights":
             st.markdown(f"""
             <div style="background: rgba(15, 23, 42, 0.9); padding: 1.25rem; border-radius: 14px; border: 1px solid rgba(255,255,255,0.1); text-align: center;">
                 <div style="font-weight: 700; font-size: 1.1rem; color: #F8FAFC;">{DEV_NAME}</div>
-                <p style="color: #94A3B8; font-size: 0.88rem; margin: 6px 0 6px 0;">Open Source Developer & AI Explorer</p>
-                <p style="color: #94A3B8; font-size: 0.85rem; margin: 0 0 12px 0;"><i>Created by {CREATED_BY}</i></p>
+                <p style="color: #94A3B8; font-size: 0.88rem; margin: 6px 0 12px 0;">Full Stack Developer & AI Enthusiast</p>
                 <a href="{DEV_GITHUB}" target="_blank" class="github-pill" style="justify-content: center; width: 100%;">
                     <svg height="16" width="16" viewBox="0 0 16 16" fill="currentColor">
                         <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08-.02 1.93.02 1.9.32 2.68.88 2.81 2.04.05.52.1 1.02.03 1.48 2.18-.82 3.47-2.45 3.47-4.06 0-.62-.11-1.23-.29-1.82.19-.53.29-1.08.29-1.69.0-1.38-.56-2.74-1.56-3.74z"></path>
                     </svg>
-                    Ravi
+                    Follow on GitHub
                 </a>
             </div>
             """, unsafe_allow_html=True)
